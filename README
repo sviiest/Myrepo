@@ -1,1 +1,9 @@
-Storing and retrieving videos in Mongodb in BSON binary format using node.js
+Storing and retrieving videos in Mongodb in BSON binary format using node.js.
+A writeTo empty folder must be created within the GridFS folder.
+
+Steps to run the program :
+Step 1: Start mongod in command prompt using --dbpath, then location of data/db folder in GridFS.
+E.g:    mongod --dbpath Desktop/GridFS/data/db
+
+Step 2: Execute storeVideo.js in node. Video from readFrom folder will be stored in database.
+Step 3: Execute retrieveVideo.js in node. Video will be retrieved from database and stored in writeTo folder.
